@@ -10,7 +10,7 @@
         "/^Dockerfile$/"
       ],
       "matchStrings": [
-        "github\\.com/lucaslorentz/caddy-docker-proxy/v(?<currentValue>\\d+\\.\\d+\\.\\d+)"
+        "ARG CADDY_DOCKER_PROXY_VERSION=(?<currentValue>\\d+(\\.\\d+){0,2})"
       ],
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "lucaslorentz/caddy-docker-proxy",
