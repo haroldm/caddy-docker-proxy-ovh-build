@@ -10,7 +10,7 @@
         "/^Dockerfile$/"
       ],
       "matchStrings": [
-        "ARG CADDY_DOCKER_PROXY_VERSION=(?<currentValue>\\d+(\\.\\d+){0,2})"
+        "ARG CADDY_DOCKER_PROXY_VERSION=(?<currentValue>\\d+(\\.\\d+){2})"
       ],
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "lucaslorentz/caddy-docker-proxy",
@@ -22,7 +22,7 @@
         "/^Dockerfile$/"
       ],
       "matchStrings": [
-        "ARG CADDY_DNS_OVH_VERSION=(?<currentValue>\\d+(\\.\\d+){0,2})"
+        "ARG CADDY_DNS_OVH_VERSION=(?<currentValue>\\d+(\\.\\d+){2})"
       ],
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "caddy-dns/ovh",
