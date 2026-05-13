@@ -1,4 +1,4 @@
-FROM caddy:2.11.2-builder AS builder
+FROM caddy:2.11.3-builder AS builder
 
 ARG CADDY_DOCKER_PROXY_VERSION=2.12.0
 ARG CADDY_DNS_OVH_VERSION=1.1.0
@@ -6,7 +6,7 @@ RUN xcaddy build \
     --with github.com/lucaslorentz/caddy-docker-proxy@v$CADDY_DOCKER_PROXY_VERSION \
     --with github.com/caddy-dns/ovh@v$CADDY_DNS_OVH_VERSION
 
-FROM caddy:2.11.2-alpine
+FROM caddy:2.11.3-alpine
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 
